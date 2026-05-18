@@ -10,7 +10,7 @@ st.set_page_config(page_title="Fruit classifier", page_icon="🍎")
 @st.cache_resource
 def load_model_v3():
     return keras.models.load_model('fruit_classifier_model.keras')
-
+ 
 try:
     model = load_model_v3()
     model_loaded = True
